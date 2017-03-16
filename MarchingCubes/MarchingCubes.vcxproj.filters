@@ -21,6 +21,9 @@
     <ClInclude Include="src\Casos.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\Quaternion.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -29,9 +32,6 @@
     </ClInclude>
     <ClInclude Include="src\volumen.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\main.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
