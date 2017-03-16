@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{27504032-FD31-4C0B-8FC3-9A7A8D712AAD}</ProjectGuid>
+    <ProjectGuid>{E324E912-2B0F-4EED-A612-801015B1D4EB}</ProjectGuid>
     <RootNamespace>MarshingCubes</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -110,6 +110,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\carga_archivo.h" />
+    <ClInclude Include="src\Casos.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Quaternion.h" />
+    <ClInclude Include="src\Shaders.h" />
+    <ClInclude Include="src\volumen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Shaders.cpp" />
+    <ClCompile Include="src\volumen.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

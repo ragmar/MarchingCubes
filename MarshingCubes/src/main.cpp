@@ -1,3 +1,6 @@
+
+#define _CRT_SECURE_NO_WARNINGS
+
 #pragma comment (lib,"lib/freeglut.lib")
 #pragma comment (lib,"lib/AntTweakBar.lib")
 #pragma comment (lib,"lib/glew32.lib")
@@ -21,6 +24,7 @@
 #define SQRT3 1.7320508f
 #define LIGHT_ACTIVADA 1
 #define BUFFER_OFFSET(i) (reinterpret_cast<void*>(i))
+
 using namespace std;
 
 //Shaders
@@ -28,8 +32,8 @@ Shaders *sh,*flat,*smooth;
 
 //Matrices Globales
 glm::mat4 Identity = glm::mat4(1.0f);
-glm::mat4 Scalar = glm::scale(1.0f,1.0f,1.0f);
-glm::mat4 Traslate = glm::translate(0.0f,0.0f,0.0f);
+glm::mat4 Scalar = glm::scale(glm::vec3(1.0f,1.0f,1.0f));
+glm::mat4 Traslate = glm::translate(glm::vec3(0.0f,0.0f,0.0f));
 glm::mat4 Project;
 glm::mat4 Vista;
 
@@ -333,8 +337,8 @@ void init(){
 	smooth = new Shaders();
 	if(sh->isSuported() && flat->isSuported() && smooth->isSuported()){
 		cout<<"Init Model View Projection Color Shader"<<endl;
-		sh->Init("../files/Shader/mvpc.vert","../files/Shader/mvpc.frag");
-		smooth->Init("../files/Shader/smooth.vert","../files/Shader/smooth.frag");
+		sh->Init("./files/Shader/mvpc.vert","./files/Shader/mvpc.frag");
+		smooth->Init("./files/Shader/smooth.vert","./files/Shader/smooth.frag");
 		smooth->setShaders();
 		sh->setShaders(); 
 		//flat->setShaders();
@@ -425,8 +429,8 @@ void usingSmooth(){
 void Draw(){
 		//Transformaciones
 	float Rotacion[16]; //matriz con la rotacion que se pasa a OpenGL
-	Traslate = glm::translate(traslacion.x,traslacion.y,traslacion.z);
-	Scalar = glm::scale(escalamiento,escalamiento,escalamiento);
+	Traslate = glm::translate(glm::vec3(traslacion.x,traslacion.y,traslacion.z));
+	Scalar = glm::scale(glm::vec3(escalamiento,escalamiento,escalamiento));
 	ConvertQuaternionToMatrix(g_Rotation, Rotacion);//convierto quaternion 2*2 en una matriz 4*4 para que OpenGL la entienda
 
 	if(phong){
