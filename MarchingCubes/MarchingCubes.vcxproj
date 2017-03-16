@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E324E912-2B0F-4EED-A612-801015B1D4EB}</ProjectGuid>
-    <RootNamespace>MarshingCubes</RootNamespace>
+    <ProjectGuid>{927CB153-4B6B-4C0D-B8DE-06052D870051}</ProjectGuid>
+    <RootNamespace>MarchingCubes</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
