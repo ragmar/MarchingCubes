@@ -1,11 +1,11 @@
-# Marshing Cubes
+# Marching Cubes
 This is a project created by Alejandro Sans (sansalejandro@gmail.com) for a Computer Graphic course (Universidad Central de Venezuela). 
 
-This project show the technique Marshing Cubes and its illumanation.
+This project show the technique Marching Cubes and its illumanation.
 
 To load a volume, you must have a .raw file and know the number of slices in each axis and insert them on the fields "Slice X", "Slice Y", and "Slice Z". After that, click the button "Cargar Modelo". It should open an explorer and you should select the .raw files with those dimensions
 
-This project has included 2 .raw files on the folder "MarshingCubes/files/Modelos"
+This project has included 2 .raw files on the folder "MarchingCubes/files/Modelos"
 # Compiling
 
 This project requires compiling with visual studio 2015 and the following external libraries:
@@ -15,24 +15,24 @@ This project requires compiling with visual studio 2015 and the following extern
 * [GLEW] 2.0.0
 * [glm] 0.9.8.4
 
-To compile in visual studio, the header files must be on a "tools" folder that must be created in the "MarshingCubes" folder. The headers should be included as follow:
+To compile in visual studio, the header files must be on a "tools" folder that must be created in the "MarchingCubes" folder. The headers should be included as follow:
 
-    - MarshingCubes/tools/GL (FreeGlut and GLEW)
-    - MarshingCubes/tools/AntTweakBar (AntTweakBar)
-    - MarshingCubes/tools/glm (glm)
+    - MarchingCubes/tools/GL (FreeGlut and GLEW)
+    - MarchingCubes/tools/AntTweakBar (AntTweakBar)
+    - MarchingCubes/tools/glm (glm)
     
 The [glm] folder must contain all the files in the folder "glm" of the library (this includes detail, gtc, gtx and simd)
 
-The libraries must be on a folder "lib" that must be created in the "MarshingCubes" folder as follow:
-- MarshingCubes/lib
+The libraries must be on a folder "lib" that must be created in the "MarchingCubes" folder as follow:
+- MarchingCubes/lib
 
-And the dll should be include on the folder "MarshingCubes",
+And the dll should be include on the folder "MarchingCubes",
 
 # Image
 
 Here is an image of the application
 
-![alt tag](./Screenshot/MarshingCubes.jpg)
+![alt tag](./Screenshot/MarchingCubes.jpg)
 
 
 
